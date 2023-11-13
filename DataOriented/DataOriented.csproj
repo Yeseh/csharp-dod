@@ -5,11 +5,19 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <RootNamespace>DataOriented</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="BenchmarkDotNet" Version="0.13.10" />
     <PackageReference Include="BenchmarkDotNet.Diagnostics.Windows" Version="0.13.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="DataOriented.Analyzers\Class1.cs">
+      <Link>DataOrientedSourceGen\Class1.cs</Link>
+    </Compile>
   </ItemGroup>
 
 </Project>
